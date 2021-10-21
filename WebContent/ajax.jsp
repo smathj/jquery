@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
@@ -26,7 +26,7 @@
 	
 	function add() {
 		
-		alert('º¸³»ÀÚ');
+		alert('ë³´ë‚´ì');
 		
 		$.ajax({
 			url : '/insert.jsp',
@@ -34,7 +34,7 @@
 			dataType : 'html',
 			data : {col1 : $('input[name=col1]').val(), col2 : $('input[name=col2]').val()},
 			success : function(result) {
-				alert('Åë½Å¼º°ø');
+				alert('í†µì‹ ì„±ê³µ');
 				console.log(result);
 				/* $("#my_button").after(result); */
 			}
@@ -48,8 +48,8 @@
 		col1 : <input type="text" name="col1">
 		col2 : <input type="text" name="col2">
 	</form>
-	<button id="add" onclick="add()">Ãß°¡</button><br>
-	<button id="my_button" onclick="test()">¹öÆ°</button><br>
+	<button id="add" onclick="add()">ì¶”ê°€</button><br>
+	<button id="my_button" onclick="test()">ë²„íŠ¼</button><br>
 	
 </body>
 </html>
