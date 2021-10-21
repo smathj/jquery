@@ -16,7 +16,7 @@
 //1. JDBC Driver 로딩하기
 Class.forName("org.mariadb.jdbc.Driver");
 String url = "jdbc:mariadb://192.168.35.100:3306/jquery";
-String sql = "insert into test (col1,col2) value (?,?)";
+String sql = "insert into test (col1,col2) value (?,?)";q
 
 String col1 = request.getParameter("col1");
 String col2 = request.getParameter("col2");
@@ -40,7 +40,6 @@ try {
 	stmt.close();
 	conn.close();
 }
-
 
 
 %>

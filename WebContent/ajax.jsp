@@ -35,6 +35,7 @@
 			data : {col1 : $('input[name=col1]').val(), col2 : $('input[name=col2]').val()},
 			success : function(result) {
 				alert('통신성공');
+				console.log(result);
 				/* $("#my_button").after(result); */
 			}
 		});
